@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de resistencias</title>
+  </head>
+
+  <body>
+    <h1>Calculadora de resistencias</h1>
+    
+    <img src="./img/resistencia.png" alt="Resistencia">
+
+    <p>Selecciona los colores:</p>
+
+    <div class="container">
+
+      <div class="container__data">
+        <p>
+          1ra Cifra:
+          <select name="primeraCifra">
+            <option class="negro" id="" value="0">Negro</option>
+            <option class="cafe" id="" value="1">Café</option>
+            <option class="rojo" id="" value="2">Rojo</option>
+            <option class="naranja" id="" value="3">Naranja</option>
+            <option class="amarillo" id="" value="4">Amarillo</option>
+            <option class="verde" id="" value="5">Verde</option>
+            <option class="azul" id="" value="6">Azul</option>
+            <option class="violeta" id="" value="7">Violeta</option>
+            <option class="gris" id="" value="8">Gris</option>
+            <option class="blanco" id="" value="9">Blanco</option>
+          </select>
+        </p>
+        <p>
+          2da cifra:
+          <select name="segundaCifra">
+            <option class="negro" id="" value="0">Negro</option>
+            <option class="cafe" id="" value="1">Café</option>
+            <option class="rojo" id="" value="2">Rojo</option>
+            <option class="naranja" id="" value="3">Naranja</option>
+            <option class="amarillo" id="" value="4">Amarillo</option>
+            <option class="verde" id="" value="5">Verde</option>
+            <option class="azul" id="" value="6">Azul</option>
+            <option class="violeta" id="" value="7">Violeta</option>
+            <option class="gris" id="" value="8">Gris</option>
+            <option class="blanco" id="" value="9">Blanco</option>
+          </select>
+        </p>
+        <p>
+          Multiplicador:
+          <select name="Multiplicador">
+            <option class="negro" id="" value="1">Negro</option>
+            <option class="cafe" id="" value="10">Café</option>
+            <option class="rojo" id="" value="100">Rojo</option>
+            <option class="naranja" id="" value="1000">Naranja</option>
+            <option class="amarillo" id="" value="10000">Amarillo</option>
+            <option class="verde" id="" value="100000">Verde</option>
+            <option class="azul" id="" value="1000000">Azul</option>
+            <option class="violeta" id="" value="10000000">Violeta</option>
+            <option class="gris" id="" value="100000000">Gris</option>
+            <option class="blanco" id="" value="1000000000">Blanco</option>
+          </select>
+        </p>
+        <p>
+          Tolerancia:
+          <select name="Tolerancia">
+            <option class="dorado" id="" value="0.05">Dorado</option>
+            <option class="plata" id="" value="0.1">Plata</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="container__picture">
+        <span class="pin"></span><span class="resistor"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistor"></span><span class="pin"></span>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>
