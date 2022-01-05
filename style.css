@@ -70,6 +70,7 @@ option {
 
 .gris {
   background: #9b9b9b;
+  color: #000;
 }
 
 .blanco {
@@ -119,6 +120,7 @@ span {
   background: #d4b83c;
   width: 10%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .resistorBody {

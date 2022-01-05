@@ -21,62 +21,65 @@
       <div class="container__data">
         <p>
           1ra Cifra:
-          <select name="primeraCifra">
-            <option class="negro" id="" value="0">Negro</option>
-            <option class="cafe" id="" value="1">Café</option>
-            <option class="rojo" id="" value="2">Rojo</option>
-            <option class="naranja" id="" value="3">Naranja</option>
-            <option class="amarillo" id="" value="4">Amarillo</option>
-            <option class="verde" id="" value="5">Verde</option>
-            <option class="azul" id="" value="6">Azul</option>
-            <option class="violeta" id="" value="7">Violeta</option>
-            <option class="gris" id="" value="8">Gris</option>
-            <option class="blanco" id="" value="9">Blanco</option>
+          <select name="primeraCifra" id="firstNum">
+            <option class="negro" id="black" value="0">Negro</option>
+            <option class="cafe" id="brown" value="1">Café</option>
+            <option class="rojo" id="red" value="2">Rojo</option>
+            <option class="naranja" id="orange" value="3">Naranja</option>
+            <option class="amarillo" id="yellow" value="4">Amarillo</option>
+            <option class="verde" id="green" value="5">Verde</option>
+            <option class="azul" id="blue" value="6">Azul</option>
+            <option class="violeta" id="purple" value="7">Violeta</option>
+            <option class="gris" id="gray" value="8">Gris</option>
+            <option class="blanco" id="white" value="9">Blanco</option>
           </select>
         </p>
         <p>
           2da cifra:
-          <select name="segundaCifra">
-            <option class="negro" id="" value="0">Negro</option>
-            <option class="cafe" id="" value="1">Café</option>
-            <option class="rojo" id="" value="2">Rojo</option>
-            <option class="naranja" id="" value="3">Naranja</option>
-            <option class="amarillo" id="" value="4">Amarillo</option>
-            <option class="verde" id="" value="5">Verde</option>
-            <option class="azul" id="" value="6">Azul</option>
-            <option class="violeta" id="" value="7">Violeta</option>
-            <option class="gris" id="" value="8">Gris</option>
-            <option class="blanco" id="" value="9">Blanco</option>
+          <select name="segundaCifra" id="secondNum">
+            <option class="negro" id="black1" value="0">Negro</option>
+            <option class="cafe" id="brown1" value="1">Café</option>
+            <option class="rojo" id="red1" value="2">Rojo</option>
+            <option class="naranja" id="orange1" value="3">Naranja</option>
+            <option class="amarillo" id="yellow1" value="4">Amarillo</option>
+            <option class="verde" id="green1" value="5">Verde</option>
+            <option class="azul" id="blue1" value="6">Azul</option>
+            <option class="violeta" id="purple1" value="7">Violeta</option>
+            <option class="gris" id="gray1" value="8">Gris</option>
+            <option class="blanco" id="white1" value="9">Blanco</option>
           </select>
         </p>
         <p>
           Multiplicador:
-          <select name="Multiplicador">
-            <option class="negro" id="" value="1">Negro</option>
-            <option class="cafe" id="" value="10">Café</option>
-            <option class="rojo" id="" value="100">Rojo</option>
-            <option class="naranja" id="" value="1000">Naranja</option>
-            <option class="amarillo" id="" value="10000">Amarillo</option>
-            <option class="verde" id="" value="100000">Verde</option>
-            <option class="azul" id="" value="1000000">Azul</option>
-            <option class="violeta" id="" value="10000000">Violeta</option>
-            <option class="gris" id="" value="100000000">Gris</option>
-            <option class="blanco" id="" value="1000000000">Blanco</option>
+          <select name="Multiplicador" id="multi">
+            <option class="negro" id="blackMul" value="1">Negro</option>
+            <option class="cafe" id="brownMul" value="10">Café</option>
+            <option class="rojo" id="redMul" value="100">Rojo</option>
+            <option class="naranja" id="orangeMul" value="1000">Naranja</option>
+            <option class="amarillo" id="yellowMul" value="10000">Amarillo</option>
+            <option class="verde" id="greenMul" value="100000">Verde</option>
+            <option class="azul" id="blueMul" value="1000000">Azul</option>
+            <option class="violeta" id="purpleMul" value="10000000">Violeta</option>
+            <option class="gris" id="grayMul" value="100000000">Gris</option>
+            <option class="blanco" id="whiteMul" value="1000000000">Blanco</option>
           </select>
         </p>
         <p>
           Tolerancia:
-          <select name="Tolerancia">
-            <option class="dorado" id="" value="0.05">Dorado</option>
-            <option class="plata" id="" value="0.1">Plata</option>
+          <select name="Tolerancia" id="tole">
+            <option class="dorado" id="goldTolerance" value="0.05">Dorado</option>
+            <option class="plata" id="silverTolerance" value="0.1">Plata</option>
           </select>
         </p>
       </div>
 
       <div class="container__picture">
-        <span class="pin"></span><span class="resistor"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistorBand"></span><span class="resistorBody"></span><span class="resistor"></span><span class="pin"></span>
+        <span class="pin"></span><span class="resistor"></span><span class="resistorBody"></span><span class="resistorBand" id="bandColor"></span><span class="resistorBody"></span><span class="resistorBand" id="bandColor1"></span><span class="resistorBody"></span><span class="resistorBand" id="bandColor2"></span><span class="resistorBody"></span><span class="resistorBand" id="bandColo3"></span><span class="resistorBody"></span><span class="resistor"></span><span class="pin"></span>
       </div>
     </div>
+
+    <p>El valor de la resistencia es: <span id="resistorValue"></span></p>
+    <p id="resistorTolerance"></p>
 
     <script src="./script.js"></script>
   </body>
